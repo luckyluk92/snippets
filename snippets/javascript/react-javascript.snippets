@@ -37,15 +37,14 @@ snippet gis
 		};
 	},
 snippet react
-	var ${1:ClassName} = React.createClass({
-    displayName: $1,
+	var ${1:Component} = React.createClass({
+		displayName: $1,
 
 		render: function() {
 			return (
 				${0:<div />}
 			);
 		}
-
 	});
 
 	module.exports = $1;
