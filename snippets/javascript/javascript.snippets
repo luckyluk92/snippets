@@ -1,6 +1,8 @@
+snippet self
+	var self = this;${0}
 # require module
 snippet req
-	var ${1} = require('${2}');
+	var ${1} = require('${2}');${0}
 # Prototype
 snippet proto
 	${1:class_name}.prototype.${2:method_name} =
@@ -20,6 +22,11 @@ snippet vf
 	var ${1:function_name} = function(${2:argument}) {
 		${3:// body...}
 	};
+# Object's function
+snippet fobj
+	${1:name}: function(${2:argument}) {
+		${3:// body...}
+	}${0}
 # Simple object
 snippet obj
 	{

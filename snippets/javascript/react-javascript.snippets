@@ -38,7 +38,7 @@ snippet gis
 	},
 snippet react
 	var ${1:Component} = React.createClass({
-		displayName: $1,
+		displayName: '$1',
 
 		render: function() {
 			return (
@@ -52,6 +52,8 @@ snippet pt
 	propTypes: {
 		${1}: React.PropTypes.${2:string}
 	},
+snippet ptf
+	${1}: React.PropTypes.${2:string}
 snippet ren
 	render: function() {
 		return (
@@ -59,8 +61,8 @@ snippet ren
 		);
 	}
 snippet sst
-	setState({
-		${1}: ${2}
+	${1:this}.setState({
+		${2}: ${3}
 	});
 snippet scu
 	shouldComponentUpdate: function(nextProps, nextState) {
